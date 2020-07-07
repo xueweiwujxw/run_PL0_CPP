@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xww/Documents/cppProjects/run_PL0
+CMAKE_SOURCE_DIR = /Users/xww/Desktop/学习/编译原理/run_PL0/run_PL0_CPP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xww/Documents/cppProjects/run_PL0/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/xww/Desktop/学习/编译原理/run_PL0/run_PL0_CPP/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xww/Documents/cppProjects/run_PL0/cmake-build-debug/CMakeFiles /Users/xww/Documents/cppProjects/run_PL0/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xww/Desktop/学习/编译原理/run_PL0/run_PL0_CPP/cmake-build-debug/CMakeFiles /Users/xww/Desktop/学习/编译原理/run_PL0/run_PL0_CPP/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xww/Documents/cppProjects/run_PL0/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xww/Desktop/学习/编译原理/run_PL0/run_PL0_CPP/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

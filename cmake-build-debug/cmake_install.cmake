@@ -1,4 +1,4 @@
-# Install script for directory: /Users/xww/Documents/cppProjects/run_PL0
+# Install script for directory: /Users/xww/Desktop/学习/编译原理/run_PL0/run_PL0_CPP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/xww/Documents/cppProjects/run_PL0/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/xww/Desktop/学习/编译原理/run_PL0/run_PL0_CPP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
