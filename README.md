@@ -15,4 +15,4 @@
 
 参考资料：[北航 编译实践 PL/0文法 - 姜楠 - 博客园](https://www.cnblogs.com/ZJUT-jiangnan/p/3494501.html)
 
-[link]:/Users/xww/Desktop/学习/编译原理/run_PL0/run_PL0_CPP/状态转化图.png
+[link]:https://github.com/xueweiwujxw/run_PL0_CPP/blob/master/%E7%8A%B6%E6%80%81%E8%BD%AC%E5%8C%96%E5%9B%BE.png
