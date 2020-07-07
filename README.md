@@ -1,17 +1,59 @@
 # PL0编译器设计——C++实现
 
-1. `getsym.h`: 词法分析
+## `getsym.h`: 词法分析
     
-    状态转化图
+状态转化图
     
-    ![image][link]
+![image][link]
+    
+词法分析就是将代码文件中的字符通过状态转化图所示的语法规则读出单词即可。
+
+为了表示单词的种类，定义如下枚举类型
+
+`
+enum SYM_class {
+    //关键字
+    CONST_SYM,              //const
+    VAR_SYM,                //var
+    PROCEDURE_SYM,          //procedure
+    BEGIN_SYM,              //begin
+    END_SYM,                //end
+    ODD_SYM,                //odd
+    IF_SYM,                 //if
+    THEN_SYM,               //then
+    CALL_SYM,               //call
+    WHILE_SYM,              //while
+    DO_SYM,                 //do
+    READ_SYM,               //read
+    WRITE_SYM,              //write
+    //算符与界符
+    ADD_SYM,                // +
+    SUB_SYM,                // -
+    MULT_SYM,               // *
+    DIV_SYM,                // /
+    EQUAL_SYM,              // =
+    NEQUAL_SYM,             // #
+    LESS_SYM,               // <
+    ELESS_SYM,              // <=
+    GRE_SYM,                // >
+    EGRE_SYM,               // >=
+    LEFTP_SYM,              // (
+    RIGHTP_SYM,             // )
+    DOT_SYM,                // .
+    COMMA_SYM,              // ,
+    ASSI_SYM,               // :=
+    SEMICOLON_SYM,          // ;
+    NUM_SYM,                //数字
+    IDE_SYM                 //标识符
+};
+`
     
     
-2. `block.h`: 语法分析+语法树生成+目标代码生成
+## `block.h`: 语法分析+语法树生成+目标代码生成
  
-3. `interpret.h`：解释执行
+## `interpret.h`：解释执行
  
-4. `main.cpp`：主函数
+## `main.cpp`：主函数
 
 参考资料：[北航 编译实践 PL/0文法 - 姜楠 - 博客园](https://www.cnblogs.com/ZJUT-jiangnan/p/3494501.html)
 
