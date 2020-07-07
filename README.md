@@ -10,7 +10,7 @@
 
 为了表示单词的种类，定义如下枚举类型
 
-`
+```(c++)
 enum SYM_class {
     //关键字
     CONST_SYM,              //const
@@ -46,9 +46,21 @@ enum SYM_class {
     NUM_SYM,                //数字
     IDE_SYM                 //标识符
 };
-`
-    
-    
+```
+
+接下来的工作就是读取字符，因为编译器本身不需要额外的输入，并且为了使用cin的get()函数，所以在读取之前，将cin重定向至文件
+
+```(c++)
+    streambuf *stdin_backup = cin.rdbuf();         //备份标准输入流
+    const char *fileinname = "../demo.txt";
+    fcin.open(fileinname);
+    if (!fcin.is_open()) {
+        cout << "failed to open " << fileinname << endl;
+        return 0;
+    }
+    cin.rdbuf(fcin.rdbuf());                //将cin重定向到文件
+```
+
 ## `block.h`: 语法分析+语法树生成+目标代码生成
  
 ## `interpret.h`：解释执行
